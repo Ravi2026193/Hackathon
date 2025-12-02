@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Shiv Sweets</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Order Your Favorite Sweets Online</h1>
+        <p><em>Fill out the form below to place your order</em></p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="order.html">Order Online</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Order Form</h2>
+            <form>
+                <fieldset>
+                <legend><b>Fill Your Order Details</b></legend>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" maxlength="10" required><br><br>
+
+                <!-- Select Sweet -->
+                <label for="sweet">Choose Sweet:</label><br>
+                <select id="sweet" name="sweet" required>
+                    <option value="" disabled selected>--Select a Sweet--</option>
+                    <option value="rasgulla">Rasgulla</option>
+                    <option value="jalebi">Jalebi</option>
+                    <option value="kaju_katli">Kaju Katli</option>
+                    <option value="soan_papdi">Soan Papdi</option>
+                </select><br><br>
+
+                <!-- Quantity -->
+                <label for="quantity">Quantity (kg):</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+                <!-- Delivery Date -->
+                <label for="date">Delivery Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <!-- Payment Method -->
+                <p>Payment Method:</p>
+                <input type="radio" id="cod" name="payment" value="cod" required>
+                <label for="cod">Cash on Delivery</label><br>
+                <input type="radio" id="upi" name="payment" value="upi">
+                <label for="upi">UPI</label><br>
+                <input type="radio" id="card" name="payment" value="card">
+                <label for="card">Credit/Debit Card</label><br><br>
+
+                <!-- Extras -->
+                <p>Extras (optional):</p>
+                <input type="checkbox" id="gift" name="extra" value="gift">
+                <label for="gift">Gift Wrap</label><br>
+                <input type="checkbox" id="note" name="extra" value="note">
+                <label for="note">Include Personalized Note</label><br><br>
+
+                <!-- Address -->
+                <label for="address">Delivery Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+
+                <!-- Submit and Reset -->
+                <input type="submit" value="Place Order">
+                <input type="reset" value="Clear Form">
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; All rights are preserved</p>
+    </footer>
+
+</body>
+</html>
